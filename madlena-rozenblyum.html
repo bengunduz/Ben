@@ -3,88 +3,125 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Madlena Rozenblyum</title>
+<title>Madlena Rozenblyum, LCSW</title>
+<meta name="description" content="Madlena Rozenblyum, LCSW — bilingual (English/Russian) psychotherapist in Forest Hills, Queens, NY. In-person and telehealth sessions.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#faf7f2;--fg:#2a2522;--muted:#7a6f66;--accent:#b5523b;--card:#fff;--line:#e8e0d6}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1816;--fg:#efe8e0;--muted:#a89c90;--accent:#e07a5f;--card:#25211e;--line:#3a332e}}
+:root{--bg:#f7f6f2;--fg:#24302c;--muted:#66736e;--accent:#3d7a68;--soft:#e4efe9;--card:#fff;--line:#e2e4de}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161c1a;--fg:#e8eeeb;--muted:#9aa8a2;--accent:#6fbfa5;--soft:#1f2b27;--card:#1d2522;--line:#2e3a36}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 Inter,system-ui,sans-serif}
 a{color:var(--accent)}
 nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:10}
-nav .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-nav b{font-family:"Playfair Display",serif;font-size:1.2rem}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding-top:12px;padding-bottom:12px}
+nav b{font-family:"Playfair Display",serif;font-size:1.15rem}
 nav a{margin-left:18px;text-decoration:none;color:var(--fg);font-size:.9rem}
 nav a:hover{color:var(--accent)}
-.wrap{max-width:960px;margin:0 auto;padding:16px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
 h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.2}
-.hero{display:grid;grid-template-columns:220px 1fr;gap:40px;align-items:center;padding:64px 16px}
-.avatar{width:220px;height:220px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#e9c46a);display:grid;place-items:center;color:#fff;font:700 4rem "Playfair Display",serif}
-.hero h1{font-size:3rem;margin:0}
-.tag{color:var(--muted);font-size:1.1rem}
-.btn{display:inline-block;padding:10px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;margin-top:12px}
-section{padding:48px 16px;border-top:1px solid var(--line)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
-.card h3{margin-top:0}
-.tl{border-left:2px solid var(--accent);padding-left:20px}
-.tl div{margin-bottom:22px}
-.tl span{color:var(--muted);font-size:.9rem}
-blockquote{font:italic 1.4rem "Playfair Display",serif;border-left:4px solid var(--accent);margin:0;padding-left:20px}
-footer{text-align:center;color:var(--muted);font-size:.85rem;padding:32px 16px;border-top:1px solid var(--line)}
-@media(max-width:640px){.hero{grid-template-columns:1fr;text-align:center;justify-items:center}.hero h1{font-size:2.3rem}nav a{margin:0 8px}}
+h2{font-size:2rem;margin-top:0}
+.hero{background:var(--soft)}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:72px}
+.hero h1{font-size:2.9rem;margin:0 0 6px}
+.cred{color:var(--accent);font-weight:500;letter-spacing:.04em;text-transform:uppercase;font-size:.85rem}
+.lead{font-size:1.15rem;color:var(--muted)}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;margin:10px 10px 0 0;font-weight:500}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.facts{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.facts div{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.facts div:last-child{border:0}
+.facts span{color:var(--muted)}
+section{padding:64px 0}
+section+section{border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{margin:0 0 6px;font-size:1.15rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.chips span{background:var(--soft);color:var(--fg);padding:6px 14px;border-radius:999px;font-size:.9rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+blockquote{font:italic 1.35rem/1.5 "Playfair Display",serif;border-left:4px solid var(--accent);margin:0;padding-left:20px}
+.contact{background:var(--soft)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:32px 16px}
+.crisis{font-size:.85rem;color:var(--muted);margin-top:16px}
+@media(max-width:720px){.hero .wrap,.two{grid-template-columns:1fr}.hero h1{font-size:2.2rem}nav a{margin:0 12px 0 0}}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b>M. Rozenblyum</b><div><a href="#about">About</a><a href="#work">Work</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="wrap"><b>Madlena Rozenblyum, LCSW</b><div><a href="#about">About</a><a href="#services">Services</a><a href="#humanitarian">Humanitarian Work</a><a href="#writing">Writing</a><a href="#contact">Contact</a></div></div></nav>
 
-<header class="wrap hero">
-  <div class="avatar">MR</div>
+<header class="hero"><div class="wrap">
   <div>
+    <div class="cred">Licensed Clinical Social Worker · Psychotherapist</div>
     <h1>Madlena Rozenblyum</h1>
-    <p class="tag">Creative professional · Curious mind · Lifelong learner</p>
-    <p>Welcome to my little corner of the internet. Here you'll find a bit about who I am, what I do, and how to get in touch.</p>
-    <a class="btn" href="#contact">Say hello</a>
+    <p class="lead">Compassionate, bilingual psychotherapy in English and Russian for children, teens and adults — with more than 30 years of clinical experience.</p>
+    <p class="lead" lang="ru">Психотерапия на русском и английском языках.</p>
+    <a class="btn" href="tel:+16466458016">Call (646) 645-8016</a>
+    <a class="btn ghost" href="#services">View services</a>
   </div>
-</header>
+  <div class="facts">
+    <div><span>Location</span><b>Forest Hills, Queens, NY</b></div>
+    <div><span>Experience</span><b>30+ years</b></div>
+    <div><span>Languages</span><b>English · Russian</b></div>
+    <div><span>Ages</span><b>5+, teens, adults</b></div>
+    <div><span>Sessions</span><b>In-person &amp; Telehealth</b></div>
+    <div><span>Payment</span><b>Private Pay</b></div>
+  </div>
+</div></header>
 
 <main>
-<section id="about"><div class="wrap">
-  <h2>About me</h2>
-  <p>Hi, I'm Madlena. I love bringing ideas to life, connecting with people, and finding beauty in everyday details. Whether I'm working on a new project, exploring a new city, or reading with a cup of tea, I'm always looking for inspiration.</p>
-  <p><em>Replace this text with your own story — where you're from, what drives you, and what you care about.</em></p>
+<section id="about"><div class="wrap two">
+  <div>
+    <h2>About Madlena</h2>
+    <p>Madlena Rozenblyum, LCSW, is a seasoned Licensed Clinical Social Worker and psychotherapist practicing in Forest Hills, Queens. A native of Georgia during the Soviet era, she immigrated to the United States in 1989 — an experience that gives her a deep, personal understanding of the challenges of emigration, adjustment and building a new life.</p>
+    <p>A native Russian speaker who is fluent in English, she offers a warm, culturally attuned space for individuals and families from Russian-speaking communities as well as English-speaking clients.</p>
+  </div>
+  <div>
+    <blockquote>Healing begins in a space where you are truly understood — in your language, and in your story.</blockquote>
+  </div>
 </div></section>
 
-<section id="work"><div class="wrap">
-  <h2>What I do</h2>
+<section id="services"><div class="wrap">
+  <h2>Areas of focus</h2>
+  <p class="lead">Individual, child and family therapy addressing:</p>
   <div class="grid">
-    <div class="card"><h3>Projects</h3><p>A showcase of the work I'm most proud of. Add links, images, or short descriptions here.</p></div>
-    <div class="card"><h3>Writing</h3><p>Thoughts, essays and notes on topics I'm passionate about.</p></div>
-    <div class="card"><h3>Collaboration</h3><p>I enjoy working with others — reach out if you'd like to build something together.</p></div>
+    <div class="card"><h3>Anxiety &amp; Panic</h3><p>Tools to manage worry, panic attacks and overwhelming stress.</p></div>
+    <div class="card"><h3>Trauma</h3><p>Complex trauma, war trauma and the after-effects of domestic violence.</p></div>
+    <div class="card"><h3>Emigration &amp; Adjustment</h3><p>Support through relocation, cultural transition and identity.</p></div>
+    <div class="card"><h3>Depression &amp; Grief</h3><p>Working through loss, low mood and life transitions.</p></div>
+    <div class="card"><h3>Family &amp; Relationships</h3><p>Parent-child and spousal conflicts, communication and repair.</p></div>
+    <div class="card"><h3>Sleep Disorders</h3><p>Addressing insomnia and sleep difficulties linked to stress.</p></div>
   </div>
+  <div class="chips"><span>Children 5+</span><span>Teenagers</span><span>Adults</span><span>Couples &amp; Families</span><span>In-person</span><span>Telehealth</span></div>
 </div></section>
 
-<section id="journey"><div class="wrap">
-  <h2>My journey</h2>
-  <div class="tl">
-    <div><span>Today</span><h3>Current chapter</h3><p>What I'm focused on right now.</p></div>
-    <div><span>Previously</span><h3>Earlier experience</h3><p>Roles, studies or milestones that shaped me.</p></div>
-    <div><span>Where it began</span><h3>Education</h3><p>School, programs and early influences.</p></div>
+<section id="humanitarian"><div class="wrap">
+  <h2>Humanitarian work</h2>
+  <p>Beyond her private practice, Madlena is recognized for her active role in humanitarian mental health support. She has been prominently involved in organizing grassroots and professional networks providing psychological support to refugees and people affected by conflict — particularly during the crises in Crimea and mainland Ukraine.</p>
+</div></section>
+
+<section id="writing"><div class="wrap">
+  <h2>Author &amp; educator</h2>
+  <p>Madlena is also an author and educator who writes articles and books offering practical, compassionate parenting advice — helping parents understand their children and strengthen family bonds.</p>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap two">
+  <div>
+    <h2>Schedule a consultation</h2>
+    <p>Call to ask about availability or to book an in-person or telehealth session.</p>
+    <p><b>Phone:</b> <a href="tel:+16466458016">(646) 645-8016</a><br>
+    <b>Office:</b> 98 Queens Blvd, Ste 1C<br>Forest Hills, NY 11375<br>
+    <b>Payment:</b> Private Pay<br>
+    <b>NPI:</b> 1922100163</p>
+    <p class="crisis">If you are in crisis, call or text <b>988</b> (Suicide &amp; Crisis Lifeline) or dial 911.</p>
   </div>
-</div></section>
-
-<section><div class="wrap">
-  <blockquote>“Do what you love, and share it with the world.”</blockquote>
-</div></section>
-
-<section id="contact"><div class="wrap">
-  <h2>Get in touch</h2>
-  <p>I'd love to hear from you.</p>
-  <p>✉️ <a href="mailto:hello@example.com">hello@example.com</a><br>
-  🔗 <a href="#">LinkedIn</a> · <a href="#">Instagram</a></p>
+  <div class="card">
+    <h3>Office hours &amp; sessions</h3>
+    <p>Sessions are offered in person in Forest Hills, Queens, and via secure telehealth. Services available in English and Russian.</p>
+  </div>
 </div></section>
 </main>
 
-<footer>© 2026 Madlena Rozenblyum. All rights reserved.</footer>
+<footer>© 2026 Madlena Rozenblyum, LCSW · Forest Hills, Queens, New York</footer>
 </body>
 </html>
