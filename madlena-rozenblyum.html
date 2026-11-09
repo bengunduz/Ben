@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madlena Rozenblyum</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf7f2;--fg:#2a2522;--muted:#7a6f66;--accent:#b5523b;--card:#fff;--line:#e8e0d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1816;--fg:#efe8e0;--muted:#a89c90;--accent:#e07a5f;--card:#25211e;--line:#3a332e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 Inter,system-ui,sans-serif}
+a{color:var(--accent)}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+nav b{font-family:"Playfair Display",serif;font-size:1.2rem}
+nav a{margin-left:18px;text-decoration:none;color:var(--fg);font-size:.9rem}
+nav a:hover{color:var(--accent)}
+.wrap{max-width:960px;margin:0 auto;padding:16px}
+h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.2}
+.hero{display:grid;grid-template-columns:220px 1fr;gap:40px;align-items:center;padding:64px 16px}
+.avatar{width:220px;height:220px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#e9c46a);display:grid;place-items:center;color:#fff;font:700 4rem "Playfair Display",serif}
+.hero h1{font-size:3rem;margin:0}
+.tag{color:var(--muted);font-size:1.1rem}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;margin-top:12px}
+section{padding:48px 16px;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{margin-top:0}
+.tl{border-left:2px solid var(--accent);padding-left:20px}
+.tl div{margin-bottom:22px}
+.tl span{color:var(--muted);font-size:.9rem}
+blockquote{font:italic 1.4rem "Playfair Display",serif;border-left:4px solid var(--accent);margin:0;padding-left:20px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:32px 16px;border-top:1px solid var(--line)}
+@media(max-width:640px){.hero{grid-template-columns:1fr;text-align:center;justify-items:center}.hero h1{font-size:2.3rem}nav a{margin:0 8px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>M. Rozenblyum</b><div><a href="#about">About</a><a href="#work">Work</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="wrap hero">
+  <div class="avatar">MR</div>
+  <div>
+    <h1>Madlena Rozenblyum</h1>
+    <p class="tag">Creative professional · Curious mind · Lifelong learner</p>
+    <p>Welcome to my little corner of the internet. Here you'll find a bit about who I am, what I do, and how to get in touch.</p>
+    <a class="btn" href="#contact">Say hello</a>
+  </div>
+</header>
+
+<main>
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <p>Hi, I'm Madlena. I love bringing ideas to life, connecting with people, and finding beauty in everyday details. Whether I'm working on a new project, exploring a new city, or reading with a cup of tea, I'm always looking for inspiration.</p>
+  <p><em>Replace this text with your own story — where you're from, what drives you, and what you care about.</em></p>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>What I do</h2>
+  <div class="grid">
+    <div class="card"><h3>Projects</h3><p>A showcase of the work I'm most proud of. Add links, images, or short descriptions here.</p></div>
+    <div class="card"><h3>Writing</h3><p>Thoughts, essays and notes on topics I'm passionate about.</p></div>
+    <div class="card"><h3>Collaboration</h3><p>I enjoy working with others — reach out if you'd like to build something together.</p></div>
+  </div>
+</div></section>
+
+<section id="journey"><div class="wrap">
+  <h2>My journey</h2>
+  <div class="tl">
+    <div><span>Today</span><h3>Current chapter</h3><p>What I'm focused on right now.</p></div>
+    <div><span>Previously</span><h3>Earlier experience</h3><p>Roles, studies or milestones that shaped me.</p></div>
+    <div><span>Where it began</span><h3>Education</h3><p>School, programs and early influences.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <blockquote>“Do what you love, and share it with the world.”</blockquote>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Get in touch</h2>
+  <p>I'd love to hear from you.</p>
+  <p>✉️ <a href="mailto:hello@example.com">hello@example.com</a><br>
+  🔗 <a href="#">LinkedIn</a> · <a href="#">Instagram</a></p>
+</div></section>
+</main>
+
+<footer>© 2026 Madlena Rozenblyum. All rights reserved.</footer>
+</body>
+</html>
